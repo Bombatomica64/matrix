@@ -98,7 +98,7 @@ def detect_crate(path: Path, repo_root: Path) -> Tuple[str, Path]:
     except ValueError as exc:  # pragma: no cover - defensive
         raise SystemExit(f"File {path} is outside repo root {repo_root}") from exc
     parts = rel.parts
-    crate = next((p for p in parts if p in {"Lorenzo", "Samuele"}), "workspace")
+    crate = next((p for p in parts if p in {"Lorenzo"}), "workspace")
     return crate, rel
 
 

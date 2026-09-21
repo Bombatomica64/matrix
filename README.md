@@ -1,9 +1,8 @@
 # Matrix Workspace
 
-Monorepo with two Rust crates:
+Cargo workspace with one Rust crate:
 
 - **Lorenzo**: Generic N-D matrix & vector algebra (construction, arithmetic, linear combination, interpolation, dot / Hermitian dot, norms, cosine similarity, cross product (3D), generalized matrix×matrix and matrix×vector contraction, rank‑1 scalar contraction).
-- **Samuele**: (currently empty logic / example placeholder) – shows zero coverage until tests are added.
 
 ## Features (Lorenzo)
 
@@ -46,9 +45,6 @@ The CI workflow runs `cargo llvm-cov` and rewrites the tables below. Do not edit
 | Lorenzo | Lorenzo/src/row_echelon.rs | 100.00% | 98.32% | 99.23% | 83.33% |
 | Lorenzo | Lorenzo/src/trace.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 | Lorenzo | Lorenzo/src/transpose.rs | 100.00% | 100.00% | 100.00% | 100.00% |
-| Samuele | Samuele/src/main.rs | 0.00% | 0.00% | 0.00% | — |
-| Samuele | Samuele/src/matrix.rs | 0.00% | 0.00% | 0.00% | — |
-| Samuele | Samuele/src/vector.rs | 0.00% | 0.00% | 0.00% | — |
 <!-- COVERAGE:PER-FILE-END -->
 
 ### Per-crate totals
@@ -56,7 +52,6 @@ The CI workflow runs `cargo llvm-cov` and rewrites the tables below. Do not edit
 | Crate | Function Coverage | Line Coverage | Region Coverage | Branch Coverage |
 |-------|-------------------|---------------|-----------------|-----------------|
 | Lorenzo | 96.08% | 83.60% | 84.59% | 80.00% |
-| Samuele | 0.00% | 0.00% | 0.00% | — |
 <!-- COVERAGE:CRATE-END -->
 
 ### Workspace total
@@ -121,7 +116,6 @@ Then embed in docs:
 - Per-file threshold gating (fail if any core module < X%)
 - Benchmarks (criterion) and performance coverage
 - Add branch coverage via additional instrumentation if needed
-- Samuele crate: add examples/tests or remove to reduce noise
 
 ## Development
 
