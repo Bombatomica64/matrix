@@ -30,19 +30,19 @@ The CI workflow runs `cargo llvm-cov` and rewrites the tables below. Do not edit
 | Lorenzo | Lorenzo/src/add_sub_scale.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 | Lorenzo | Lorenzo/src/cosine.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 | Lorenzo | Lorenzo/src/cross_prod.rs | 100.00% | 100.00% | 100.00% | 100.00% |
-| Lorenzo | Lorenzo/src/determinant.rs | 100.00% | 91.53% | 94.07% | 65.00% |
+| Lorenzo | Lorenzo/src/determinant.rs | 100.00% | 91.53% | 95.33% | 65.00% |
 | Lorenzo | Lorenzo/src/dot_prod.rs | 100.00% | 100.00% | 100.00% | 100.00% |
-| Lorenzo | Lorenzo/src/inverse.rs | 100.00% | 94.12% | 91.29% | 90.00% |
+| Lorenzo | Lorenzo/src/inverse.rs | 100.00% | 94.81% | 92.64% | 90.00% |
 | Lorenzo | Lorenzo/src/linear_combo.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 | Lorenzo | Lorenzo/src/linear_inter.rs | 100.00% | 100.00% | 100.00% | 100.00% |
-| Lorenzo | Lorenzo/src/linear_map.rs | 97.22% | 96.27% | 97.52% | 70.83% |
-| Lorenzo | Lorenzo/src/main.rs | 82.35% | 28.52% | 34.22% | — |
-| Lorenzo | Lorenzo/src/my_mat.rs | 85.71% | 88.77% | 90.92% | 73.91% |
-| Lorenzo | Lorenzo/src/my_vect.rs | 100.00% | 100.00% | 99.10% | 100.00% |
-| Lorenzo | Lorenzo/src/norm.rs | 96.55% | 96.97% | 97.80% | — |
+| Lorenzo | Lorenzo/src/linear_map.rs | 97.22% | 96.31% | 97.81% | 70.83% |
+| Lorenzo | Lorenzo/src/main.rs | 82.35% | 27.37% | 30.38% | — |
+| Lorenzo | Lorenzo/src/my_mat.rs | 85.71% | 89.21% | 90.38% | 73.91% |
+| Lorenzo | Lorenzo/src/my_vect.rs | 100.00% | 100.00% | 99.16% | 100.00% |
+| Lorenzo | Lorenzo/src/norm.rs | 96.55% | 96.99% | 98.10% | — |
 | Lorenzo | Lorenzo/src/projection.rs | 100.00% | 100.00% | 100.00% | 50.00% |
 | Lorenzo | Lorenzo/src/rank.rs | 100.00% | 100.00% | 100.00% | 100.00% |
-| Lorenzo | Lorenzo/src/row_echelon.rs | 100.00% | 98.32% | 99.23% | 83.33% |
+| Lorenzo | Lorenzo/src/row_echelon.rs | 100.00% | 98.32% | 99.15% | 83.33% |
 | Lorenzo | Lorenzo/src/trace.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 | Lorenzo | Lorenzo/src/transpose.rs | 100.00% | 100.00% | 100.00% | 100.00% |
 <!-- COVERAGE:PER-FILE-END -->
@@ -51,14 +51,14 @@ The CI workflow runs `cargo llvm-cov` and rewrites the tables below. Do not edit
 <!-- COVERAGE:CRATE-START -->
 | Crate | Function Coverage | Line Coverage | Region Coverage | Branch Coverage |
 |-------|-------------------|---------------|-----------------|-----------------|
-| Lorenzo | 96.08% | 83.60% | 84.59% | 80.00% |
+| Lorenzo | 96.08% | 82.58% | 79.34% | 80.00% |
 <!-- COVERAGE:CRATE-END -->
 
 ### Workspace total
 <!-- COVERAGE:WORKSPACE-START -->
 | Scope | Function Coverage | Line Coverage | Region Coverage | Branch Coverage |
 |-------|-------------------|---------------|-----------------|-----------------|
-| Workspace | 91.59% | 82.07% | 83.63% | 80.00% |
+| Workspace | 96.08% | 82.58% | 79.34% | 80.00% |
 <!-- COVERAGE:WORKSPACE-END -->
 
 Branch coverage is captured using `cargo +nightly llvm-cov --branch`, so the Branch column reflects real execution percentages (nightly toolchain required).
